@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<account id="1">
+    <username>admin</username>
+    <password>admin</password>
+    <cart>
+        <id>1</id>
+        <items>
+            <item>
+                <id>1</id>
+                <name>Item 1</name>
+                <description>Description 1</description>
+                <category>
+                    <id>1</id>
+                    <name>Category 1</name>
+                </category>
+                <price>1.0</price>
+                <quantity>1</quantity>
+            </item>
+            <item>
+                <id>2</id>
+                <name>Item 2</name>
+                <description>Description 2</description>
+                <category>
+                    <id>1</id>
+                    <name>Category 1</name>
+                </category>
+                <price>2.0</price>
+                <quantity>2</quantity>
+            </item>
+        </items>
+    </cart>
+</account>

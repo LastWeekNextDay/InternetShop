@@ -1,0 +1,44 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="account">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="username"/>
+        <xs:element type="xs:string" name="password"/>
+        <xs:element name="cart">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:byte" name="id"/>
+              <xs:element name="items">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="item" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:byte" name="id"/>
+                          <xs:element type="xs:string" name="name"/>
+                          <xs:element type="xs:string" name="description"/>
+                          <xs:element name="category">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:byte" name="id"/>
+                                <xs:element type="xs:string" name="name"/>
+                                <xs:element type="xs:string" name="description"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:float" name="price"/>
+                          <xs:element type="xs:byte" name="quantity"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute type="xs:byte" name="id"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

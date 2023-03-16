@@ -1,0 +1,14 @@
+<!DOCTYPE account [
+        <!ELEMENT account (id|username|password|cart)*>
+        <!ELEMENT id (#PCDATA)>
+        <!ELEMENT username (#PCDATA)>
+        <!ELEMENT password (#PCDATA)>
+        <!ELEMENT cart (id|items)*>
+        <!ELEMENT items (item)*>
+        <!ELEMENT item (id|name|description|category|price|quantity)*>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT description (#PCDATA)>
+        <!ELEMENT category (id|name|description)*>
+        <!ELEMENT price (#PCDATA)>
+        <!ELEMENT quantity (#PCDATA)>
+        ]>
