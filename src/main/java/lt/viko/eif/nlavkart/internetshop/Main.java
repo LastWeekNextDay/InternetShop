@@ -6,6 +6,7 @@ import lt.viko.eif.nlavkart.internetshop.gui.SenderWindow;
 /**
  * Main class of the program.
  */
+
 public class Main {
     /**
      * Main method of the program.
